@@ -1,0 +1,93 @@
+* {
+  background-color: #1DB954;
+  font-family: "Gotham";
+}
+
+.navbar, .navbar-brand {
+  background-color: #000000;
+  color: #1DB954;
+  margin-bottom: 0 !important;
+  border-radius: 0px !important;
+}
+
+#play_button, #choose {
+  margin: auto;
+  display: block;
+}
+
+#choose {
+  padding-top: 50px;
+}
+
+.choice {
+  border-color: #000000;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 750;
+  color: #FFFFFF;
+}
+
+.choice:hover {
+  color: white;
+  background: #404040;
+}
+
+.create {
+  margin: auto;
+  display: block;
+  border-color: #000000;
+  background: #000000;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 750;
+  color: #FFFFFF;
+  padding: 1em 20em;
+  border-radius: 30px;
+}
+
+.create:hover {
+  color: white;
+  background: #404040;
+}
+
+.center
+{
+  text-align: center;
+}
+
+.icon
+{
+   background-color: #000000;
+   box-sizing: content-box;
+   margin: 1em;
+   padding: 1em;
+   display: inline-block;
+   border-radius: 30px;
+}
+
+.row-fluid-1
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dl-horizontal
+{
+  display: none;
+}
+.btn-circle.btn-lg {
+  width: 65px;
+  height: 65px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 30px;
+}
+
+.playlist{
+  display: none;
+}
+
+.container-fluid {
+  background-color: #1DB954;
+}
