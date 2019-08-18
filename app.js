@@ -1,8 +1,3 @@
-$("body").css("background-color", "#FFFFFF");
-// $("body").css("background-image", 'url(' +"https://www.safwallpapers.com/files/1521133753_255a814cd2bfedb94e81b2a6f783a2d2.jpg"+ ')');
-// $("body").css("background-size", 'cover');
-// $("body").css("background-repeat", 'no-repeat');
- 
 $(document).ready(() =>
 {
     const $rdr = $('.redirect');
