@@ -1,18 +1,25 @@
+
+
 * {
   background-color: #1DB954;
-  font-family: "Gotham";
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar, .navbar-brand {
   background-color: #000000;
   color: #1DB954;
+  margin-top: 0; !important;
   margin-bottom: 0 !important;
-  border-radius: 0px !important;
+  border-radius: 0 !important;
 }
 
 #play_button, #choose {
   margin: auto;
   display: block;
+}
+
+.sign {
+  padding-top: 50px;
 }
 
 #choose {
@@ -90,4 +97,62 @@
 
 .container-fluid {
   background-color: #1DB954;
+}
+
+.redirect {
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  display: block;
+  border-color: #000000;
+  background: #000000;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 750;
+  color: #FFFFFF;
+  padding: 1em 20em;
+  border-radius: 30px;
+
+}
+
+.redirect:hover {
+  color: white;
+  background: #404040;
+}
+
+#footer, #footer2 {
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  height: 2.0rem;            /* Footer height */
+  float: bottom;
+  text-align: right;
+
+
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#login, #loggedin {
+  display: none;
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 500px;
+}
+
+.container-fluid-selection {
+   display: none;
+}
+
+#profile {
+  color: #ffffff;
+}
+
+#profile:hover {
+  text-decoration: none;
+  color: #404040;
 }
