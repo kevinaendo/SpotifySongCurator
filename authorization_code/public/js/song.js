@@ -9,8 +9,8 @@
 
 
         if (Object.entries(hashParams).length> 0){
-            $("#body2").show();
-            $("#body1").hide();
+            $("#body1").css("display","none");
+            $("#body2").css("display","block");
         }
         hashParams = "";
 
@@ -259,7 +259,7 @@
                                                         height = screen.height - 400;
                                                         url = json6.external_urls.spotify.substring(0, 25) + "embed/" + json6.external_urls.spotify.substring(25, json6.external_urls.spotify.length);
                                                         $(".container-fluid-selection").html('<h1 id="choose" style="color: black" class = \'text-center\'>Check Out Your New Playlist!</h1><br><div class =\'col-sm-12\' id = \'song_info\'></div>');
-                                                        $("#song_info").html('<iframe class = "col-xs-12" id = "play_button" src="' + url + '" width="' + width + '" height="' + height + '" frameborder="100" allowtransparency="true" allow="encrypted-media"></iframe><br><button type="button" class="create" id="redirect" onclick="window.location.reload()">Create Another Playlist</button><br><br><footer id="footer">Copyright © 2019 Created by <a id = "profile" href="https://www.linkedin.com/in/kevin-endo-b22238155/" target="_blank">Kevin Endo</a>, <a id = "profile" + href="https://www.linkedin.com/in/jordan-mercado-5905a5136/" target="_blank">Jordan Mercado</a> & <a id = "profile" href="https://www.linkedin.com/in/gautam417/" target="_blank">Gautam Mehta</a></footer>');
+                                                        $("#song_info").html('<iframe class = "col-xs-12" id = "play_button" src="' + url + '" width="' + width + '" height="' + height + '" frameborder="100" allowtransparency="true" allow="encrypted-media"></iframe><br><button type="button" class="create" id="redirect" onclick="window.location.reload()">Create Another Playlist</button><br><br><footer id="footer">Copyright © 2019 Created by <a id = "profile" href="https://www.linkedin.com/in/kevin-endo-b22238155/" target="_blank">Kevin Endo</a>, <a id = "profile" + href="https://www.linkedin.com/in/jordan-mercado-5905a5136/" target="_blank">Jordan Mercado</a> & <a id = "profile" href="https://gautammehta.me" target="_blank">Gautam Mehta</a></footer>');
                                                         $("#footer2").hide();
 
                                                     }
