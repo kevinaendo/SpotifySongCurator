@@ -10,7 +10,7 @@
 
         if (Object.entries(hashParams).length> 0){
             $("#body1").css("display","none");
-            $("#body2").css("display","block");
+            $("#body2").show();
         }
         hashParams = "";
 
