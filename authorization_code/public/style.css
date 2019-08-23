@@ -1,5 +1,3 @@
-
-
 * {
   background-color: #1DB954;
   font-family: "Montserrat", sans-serif;
@@ -8,9 +6,28 @@
 .navbar, .navbar-brand {
   background-color: #000000;
   color: #1DB954;
-  margin-top: 0; !important;
+  height: 63px;
   margin-bottom: 0 !important;
   border-radius: 0 !important;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#desc {
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#logo {
+  color: #1DB954;
+  text-decoration: none;
 }
 
 #play_button, #choose {
@@ -110,7 +127,7 @@
   height: 100%;
   font-weight: 750;
   color: #FFFFFF;
-  padding: 1em 20em;
+  padding: 1em 10em;
   border-radius: 30px;
 
 }
@@ -155,4 +172,8 @@
 #profile:hover {
   text-decoration: none;
   color: #404040;
+}
+
+#middle {
+  margin: 0 auto;
 }
