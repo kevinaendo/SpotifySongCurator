@@ -6,9 +6,18 @@
 .navbar, .navbar-brand {
   background-color: #000000;
   color: #1DB954;
-  height: 63px;
+  /* height: 63px; */
   margin-bottom: 0 !important;
   border-radius: 0 !important;
+}
+.navbar-nav{
+  background-color: #000000;
+  color: #1DB954;
+  padding-top: 17px;
+}
+.nav-item{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .vertical-center {
@@ -24,7 +33,15 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
+p {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+hr {
+  width: 350px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
 #logo {
   color: #1DB954;
   text-decoration: none;

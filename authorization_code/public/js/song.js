@@ -13,7 +13,7 @@
             $("#body2").show();
         }
         hashParams = "";
-
+        
         var genre = "";
 
         (function () {
