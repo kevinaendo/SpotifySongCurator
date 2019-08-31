@@ -9,11 +9,12 @@
 
 
         if (Object.entries(hashParams).length> 0){
-            $("#body1").css("display","none");
-            $("#body2").show();
+            $("#body1").delay(10).hide();
+            $(".row-fluid-3").show().delay(500).hide(0);
+            $("#body2").delay(500).fadeIn(0);
         }
         hashParams = "";
-        
+
         var genre = "";
 
         (function () {
