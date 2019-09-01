@@ -16,6 +16,7 @@
   padding-top: 17px;
 }
 .nav-item{
+  /* color: #3A1DB9; */
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -53,6 +54,16 @@ hr {
   width: 350px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+/* #line {
+  width: auto;
+  border-top: 1px solid #3A1DB9;
+  border-bottom: 1px solid #3A1DB9;
+} */
+#line {
+  width: 100%;
+  border-top: 1px solid #3A1DB9;
+  border-bottom: 1px solid #3A1DB9;
 }
 #logo {
   color: #1DB954;
@@ -143,7 +154,11 @@ hr {
   line-height: 1.33;
   border-radius: 30px;
 }
-
+.headshots{
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+}
 .playlist{
   display: none;
 }
@@ -272,4 +287,52 @@ circle:nth-of-type(4) {
  -webkit-transform: rotate(360deg);
  transform: rotate(360deg);
 }
+}
+#after {
+    /* padding-top: 5%; */
+    /* text-align: center; */
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+#welc {
+    /* margin-top: 5%; */
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }

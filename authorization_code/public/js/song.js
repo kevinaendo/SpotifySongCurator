@@ -1,5 +1,4 @@
     $(document).ready(function() {
-
         var hashParams = {};
                 var e, r = /([^&;=]+)=?([^&;]*)/g,
                     q = window.location.hash.substring(1);
@@ -30,16 +29,19 @@
             $rbBtn.click(function () {
                 genre = 'r&b';
                 $rbBtn.fadeOut(150);
-                $('.container-fluid-genre').hide();
-                $('.container-fluid-selection').show();
+                $('.container-fluid-genre').delay(150).hide();
                 songRecommender();
+                // setTimeout(songRecommender, 2000);
+
+                // $('.container-fluid-selection').fadeIn("fast", function(){
+                //   songRecommender();
+                //   });
 
             });
             $edmBtn.click(function () {
                 genre = 'edm';
                 $edmBtn.fadeOut(150);
-                $('.container-fluid-genre').hide();
-                $('.container-fluid-selection').show();
+                $('.container-fluid-genre').delay(150).hide();
                 songRecommender();
 
             });
@@ -47,13 +49,11 @@
             $hiphopBtn.click(function () {
                 genre = 'hip-hop';
                 $hiphopBtn.fadeOut(150);
-                $('.container-fluid-genre').hide();
-                $('.container-fluid-selection').show();
+                $('.container-fluid-genre').delay(150).hide();
                 songRecommender();
 
             });
 
-            console.log(genre);
         })();
 
         function songRecommender() {
@@ -275,19 +275,14 @@
                                         '<iframe class = "col-xs-12" id =' + ' "play_button" src="' + url + '"width="400" height="450" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
                                     i = i + 1;
                                 });
-
                                 console.log(artistList);
-
                             }
-
                             // Makes request to get top user tracks
                         }
-                        // NEED TO KEEP TRACK OF 'HIP HOP/EDM/R&B SELECTION USING COOKIES'
-                        // Use items from JSON2 to put it into a list var
-                        // Use Spotify Playlist to fill the remainder of list
-
                     }
                     req.send();
+                    $(".row-fluid-3").show().delay(500).hide(0);
+                    $('.container-fluid-selection').delay(400).fadeIn(0);
 
                     console.log(tracklist);
                 } else {
