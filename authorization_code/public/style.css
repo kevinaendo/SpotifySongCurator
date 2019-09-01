@@ -65,6 +65,10 @@ hr {
   border-top: 1px solid #3A1DB9;
   border-bottom: 1px solid #3A1DB9;
 }
+#line2 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
 #logo {
   color: #1DB954;
   text-decoration: none;
