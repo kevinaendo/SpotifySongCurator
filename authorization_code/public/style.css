@@ -61,10 +61,18 @@ hr {
   border-bottom: 1px solid #3A1DB9;
 } */
 #line {
-  width: 100%;
-  border-top: 1px solid #3A1DB9;
-  border-bottom: 1px solid #3A1DB9;
+  width: 75%;
+  /* max-width: 50%; */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
+/* #line3 {
+  width: 25%;
+  max-width: 50%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+} */
+
 #line2 {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -160,7 +168,7 @@ hr {
 }
 .headshots{
   object-fit: cover;
-  height: 250px;
+  height: 300px;
   width: 100%;
 }
 .playlist{
@@ -339,4 +347,9 @@ circle:nth-of-type(4) {
     to {
         opacity: 1;
     }
+}
+
+.navbar-brand:hover,.nav-link:hover{
+  color: white;
+  text-decoration: None;
 }
