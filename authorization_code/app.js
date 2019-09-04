@@ -157,4 +157,26 @@ app.get('/refresh_token', function(req, res) {
 });
 
 
+//const express = require('express')
+const bodyParser = require('body-parser')
+//const app = express()
+const db = require('./queries')
+//const port = 3000
+
+app.use(bodyParser.json())
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+)
+
+//DB routing
+app.get('/playlists', db.getPlaylists);
+app.post('/playlists', db.createPlaylist);
+app.get('/playlists/:id', db.getUserById);
+
+
+
+
+
 app.listen(port);
