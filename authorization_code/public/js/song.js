@@ -198,6 +198,9 @@
                                         $("#yes").hide();
                                         $("#no").hide();
                                         $("#song_info").hide();
+                                        $("h2").hide();
+                                        $(".row-fluid-3").show().delay(500).hide(0);
+
 
                                         console.log(playlist);
                                         var seedTracks = "";

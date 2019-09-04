@@ -308,6 +308,14 @@ circle:nth-of-type(4) {
     -webkit-animation: fadein 4s; /* Safari and Chrome */
     -o-animation: fadein 4s; /* Opera */
 }
+#after2 {
+    /* padding-top: 5%; */
+    /* text-align: center; */
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
 #welc {
     /* margin-top: 5%; */
     text-align: center;
